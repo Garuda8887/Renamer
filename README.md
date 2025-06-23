@@ -1,65 +1,81 @@
-# 📁 Media File Renamer
+# 🪄 Media File Renamer
 
-A lightweight, user-friendly tool to **bulk rename image and video files** by:
+**Media File Renamer** is a fast, clean GUI tool to **bulk rename images and videos** by size, name, or photo metadata (EXIF). Rename like a pro — whether you're organizing a camera roll or prepping a media library.
+---
 
-✅ File size (ascending/descending)  
-✅ File name  
-✅ Date taken (EXIF metadata)  
+## ✨ Features
 
-You can choose the rename style:
-- `IMG_001`, `IMG_002`, ...
-- `1`, `2`, `3`, ...
+- 🔁 **Bulk Rename** by:
+  - 📂 File name (A–Z / Z–A)
+  - 🗓️ Date Taken (EXIF metadata)
+  - 📦 File Size (ascending/descending)
+- 🪪 Rename formats: `IMG_001`, `1`, etc.
+- 🧠 Smart handling of images/videos
+- 🔍 Preview thumbnails and sort visually
+- 💥 Built-in EXIF parser (Pillow)
+- 🔒 Safe skip of corrupt or unreadable files
 
 ---
 
-## 🚀 Download & Run
+## 📦 Supported Formats
 
-> No need to install Python!
+🎞️ **Video**: `.mp4`, `.mov`, `.avi`  
+🖼️ **Images**: `.jpg`, `.jpeg`, `.png`, `.gif`
 
-1. **Download** the `.exe` file (Already included in the Zip Folder)
-2. **Double-click** to open the GUI
-3. **Browse a folder** containing your image/video files
-4. Select sort method and rename pattern
-5. Click **"Rename Files"**
+> EXIF sort works with most modern cameras and smartphones.
 
 ---
 
-## 📷 Supported File Types
+## 🚀 Getting Started
 
-- `.jpg`, `.jpeg`, `.png`, `.gif`
-- `.mp4`, `.mov`, `.avi`, etc.
+### 🖥️ For Windows (No Python Required)
 
-> EXIF sorting works on images taken with most smartphones and cameras.
+1. **Download** the latest `.zip` from [Releases](https://github.com/Garuda8887/Renamer/releases)
+2. **Extract** and **double-click** the `.exe` file
+3. Select a folder → Choose sort method → Pick rename pattern → 💫 **Done!**
 
----
-
-## 🛠 Features
-
-- Cross-platform Python logic (packaged for Windows)
-- Built with `tkinter`, `Pillow`, and `os`
-- Uses EXIF metadata for accurate photo date sorting
-- Clean GUI with dropdowns
-- Safe file renaming (skips bad files silently)
+> ℹ️ Windows SmartScreen may warn on first run (due to unsigned EXE). You can safely allow it or build from source below.
 
 ---
 
-## 🧪 Requirements (for Python version)
+### 🐍 Run via Python (Cross-platform)
 
-If you'd like to run it via Python instead of `.exe`:
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/Garuda8887/Renamer.git
+   cd Renamer
+   ```
 
-```bash
-pip install Pillow
+2. Install dependencies:
+   ```bash
+   pip install Pillow
+   ```
 
-## License & Attribution
+3. Run the app:
+   ```bash
+   python renamer.py
+   ```
 
-This project is licensed under the MIT License.  
-If you use or build on this tool, please credit the original author:
+---
 
-**© 2025 Garuda8887** — [GitHub Profile](https://github.com/Garuda8887)
+## 🧪 Screenshots
 
-⚠️ Windows SmartScreen may show a warning because this app is signed with a self-signed certificate.
+| 📂 Browse Folder | 🔤 Rename Options | ✅ Success |
+|------------------|------------------|------------|
+| ![Upload](images/browse.png) | ![Range](images/range_selected.png) | ![Success](images/success.png) |
 
-This is expected for open-source tools not distributed through Microsoft or major vendors.
+---
 
-✅ You can safely run the app or build it from source using the instructions provided.
+## 📄 License & Attribution
 
+Licensed under the **MIT License** — free to use, modify, and distribute.  
+If you use this project, please give credit to:
+
+**© 2025 [Garuda8887](https://github.com/Garuda8887)**
+
+---
+
+## 🛡️ Disclaimer
+
+This is an open-source tool. The `.exe` is **self-signed** and may trigger antivirus warnings.  
+You can always inspect or run the source code directly.
